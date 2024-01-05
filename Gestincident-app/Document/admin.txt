@@ -1,0 +1,2 @@
+nom utilisateur: .\Administrateur
+mot de passe: P@$$w0rd20!8

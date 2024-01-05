@@ -1,0 +1,63 @@
+ng generate module app-routing --flat --module=app
+
+{
+    "idApp": 3,
+    "codeApp":"SODJADEB1P",
+    "libelleApp" : "eagence SODECI",
+    "descriptionApp":"app SODECI",
+    "rex":{
+        "idRex": 3,
+        "nom": "Gnazo",
+        "prenom": "KKodiaIng",
+        "fonction": "cadre"
+    }
+}
+
+{
+        "idApp": 50002,
+        "codeApp": "CIEEAB1P",
+        "libelleApp": "eagence CIE",
+        "descriptionApp": "app CIE",
+        "rex": {
+            "idRex": 2,
+            "nom": "Silue",
+            "prenom": "Tiona",
+            "fonction": "Ing"
+        }
+    },
+    {
+        "idApp": 50003,
+        "codeApp": "SODECIEAB1P",
+        "libelleApp": "eagence SODECI",
+        "descriptionApp": "app SODECI",
+        "rex": {
+            "idRex": 2,
+            "nom": "Silue",
+            "prenom": "Tiona",
+            "fonction": "Ing"
+        }
+    },
+    {
+        "idApp": 99953,
+        "codeApp": "SODEJADEB1R",
+        "libelleApp": "jade sodeci",
+        "descriptionApp": "app sodeci",
+        "rex": {
+            "idRex": 3,
+            "nom": "Gnazo",
+            "prenom": "Kodia",
+            "fonction": "cadre"
+        }
+    },
+    {
+        "idApp": 99954,
+        "codeApp": "SODGMAOC1P",
+        "libelleApp": "gmao sodeci",
+        "descriptionApp": "app sodeci",
+        "rex": {
+            "idRex": 52,
+            "nom": "Tape",
+            "prenom": "tape",
+            "fonction": "ing"
+        }
+    }

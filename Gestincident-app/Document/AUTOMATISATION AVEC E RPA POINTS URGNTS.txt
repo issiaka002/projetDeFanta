@@ -1,0 +1,32 @@
+
+
+comite sdpp:
+Demande de serveurs Production SMARTPOSTE, ETL 09/10/2023
+
+
+parametres generaux -ok, services batch, web et windows, rapport-ok avec le rpa
+
+python,powershell et 
+
+http://gsesphv3c1ea/CIEEAGENCE1/main.aspx#505256631
+
+IF  ${Succes_Navigation} == ${False}
+        FAIL   Page des paramètres généraux non affichée
+    END
+    Select Frame    id:contentIFrame1
+    Page Should Contain Element    xpath://*[@id="gridBodyTable_primaryField_{5531C9D7-9554-E911-9423-001A64DB9B68}_203"]
+    Sleep   2
+    Double Click Element    xpath://*[@id="gridBodyTable_primaryField_{5531C9D7-9554-E911-9423-001A64DB9B68}_203"]
+    Unselect Frame
+    Sleep    2
+    Select Frame    id:contentIFrame0
+    Wait Until Page Contains Element    id:gs2e_valeurparametre_d     ${DELAI FOCUS EDITEUR}
+    Sleep   2
+    Click Element    id:gs2e_valeurparametre_d
+    Wait Until Page Contains Element    id:gs2e_valeurparametre_i     ${DELAI FOCUS EDITEUR}
+    Input Text    id:gs2e_valeurparametre_i    ${Noeud du fichier HR-Acces à integrer dans le système}
+    Capture Page Screenshot      ${OUTPUTDIR}${/}03_formulaire.png
+    Unselect Frame
+    Click Element    xpath://*[@id="gs2e_parametresgeneraux|NoRelationship|Form|Mscrm.Form.gs2e_parametresgeneraux.SaveAndClose"]/span/a
+    Sleep   2
+    Capture Page Screenshot      ${OUTPUTDIR}${/}04_resultats.png

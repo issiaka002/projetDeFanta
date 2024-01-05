@@ -1,0 +1,53 @@
+<!-- <h2>Bienvenue, {{ nomAdmin }}</h2> -->
+<p>C’est la page d’accueil de mon site</p>
+
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Gestincident</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/dashboard"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/logiciel">Application</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/environ">environnement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/rex">Rex</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/listIncident">Mode operatoire</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink="/createincident" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Incident
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/createincident">Create Incident</a></li>
+            <li><a class="dropdown-item" routerLink="/listIncident">Mode operatoire</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <form class="d-flex">
+          <button class="btn btn-light mx-2"  type="submit" (click)="logout()">Déconnexion</button>
+        </form>
+      </div>
+      </div>
+  </div>
+</nav>
+
+<h1>{{message}}</h1>
+
+<h1 class="text-center text-primary fw-bold fw-8 mt-5">GESTION DES INCIDENTS</h1>
+ <img src="././././assets/img/gs2e.jpg" alt="" class="img-fluid w rounded mx-auto d-block">
+

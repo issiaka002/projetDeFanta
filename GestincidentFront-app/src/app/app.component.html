@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row p-2">
+    <div class="col card">
+      <div class="card-header row">
+        <h2>{{ routeTitle }}</h2>
+      </div>
+      <div class="card-body row" *ngIf="routeDescription != ''">
+        <div class="col" style="font-style: italic;">
+          {{ routeDescription }}
+        </div>
+      </div>
+      <div *ngIf="errorMsg != ''" class="alert alert-danger">
+        <i class="fa fa-triangle-exclamation"></i> {{ errorMsg }}
+      </div>
+      <div *ngIf="infoMsg != ''" class="alert alert-success">
+        <i class="fa fa-circle-check"></i> {{ infoMsg }}
+      </div>
+
+      <div class="card-body row">
+        <div class="col">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-light p-4 mb-4 text-center">
+	frontend01 (c), tous droits réservés.
+</footer>
+

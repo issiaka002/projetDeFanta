@@ -1,0 +1,22 @@
+<form role="form" [formGroup]="loginForm" class="mt-5">
+  <div class="d-flex justify-content-center">
+    <div class="card" style="min-width:450px; max-width:600px">
+      <div class="card-header pt-2 pb-2 text-center">
+        <h3><i class="fa fa-lock"></i> Connexion</h3>
+      </div>
+      <div class="card-body">
+        <div class="row pb-2">
+          <div class="col text-right">Votre compte :</div>
+          <div class="col"><input type="text" class="form-control" formControlName="email" /></div>
+        </div>
+        <div class="row">
+          <div class="col text-right">Mot de passe :</div>
+          <div class="col"><input type="password" class="form-control" formControlName="password" /></div>
+        </div>
+      </div>
+      <div class="card-footer pb-2 text-center">
+        <button (click)="login()" [disabled]="! submitEnabled" type="button" class="btn btn-primary"><i class="fa fa-play"></i> S'authentifier</button>
+      </div>
+    </div>
+  </div>
+</form>

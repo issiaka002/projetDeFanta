@@ -1,0 +1,14 @@
+TSE : permet à un  user de se connecter sur un server distant
+instabilité reseau
+rupture de liason
+architecture
+client   tse    sv3
+supervision classique , ressources
+broker -> session host ->(serverlicence donner les liczences aux sessions hosts) sv3
+solution:vsat ou tse
+ameliorer la bande passante
+Plugins.Docker.Endpoint=
+unix:///var/run/docker.sock
+
+
+\\GSEAUTOPPM2T\Documents Recette\TSE SAPHIRV3\07. Comité Changement\
